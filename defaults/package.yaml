@@ -3,7 +3,7 @@ kind: Configuration
 metadata:
   name: krateo-template-fireworksapp
 spec:
-  package: 'ghcr.io/krateoplatformops/krateo-template-fireworksapp:v1.0.0'
+  package: 'ghcr.io/krateoplatformops/krateo-template-fireworksapp-legacy:latest'
   packagePullPolicy: Always
   revisionActivationPolicy: Automatic
   revisionHistoryLimit: 1

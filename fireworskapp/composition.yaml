@@ -251,6 +251,7 @@ spec:
         kind: Repo
         spec:
           forProvider:
+            initialize: true
             fromRepo:
               path: skeleton
       patches:
