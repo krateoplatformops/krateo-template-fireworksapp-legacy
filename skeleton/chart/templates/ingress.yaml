@@ -13,7 +13,7 @@ metadata:
     kubernetes.io/ingress.class: kong
 spec:
   rules:
-    - host: {{ .Values.host }}.krateoplatformops.io
+    - host: {{ .Values.host }}
       http:
         paths:
           - path: /
