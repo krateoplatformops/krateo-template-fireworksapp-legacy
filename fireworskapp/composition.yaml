@@ -171,6 +171,7 @@ spec:
         apiVersion: git.krateo.io/v1alpha1
         kind: Repo
         spec:
+          deletionPolicy: Orphan 
           forProvider:
             fromRepo:
               path: skeleton
