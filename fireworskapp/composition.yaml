@@ -46,6 +46,7 @@ spec:
                 syncPolicy:
                   automated:
                     prune: true
+                    selfHeal: true
                   syncOptions:     # Sync options which modifies sync behavior
                   - CreateNamespace=true # Namespace Auto-Creation ensures that namespace specified as the application destination exists in the destination cluster.
       patches:
@@ -171,7 +172,7 @@ spec:
         apiVersion: git.krateo.io/v1alpha1
         kind: Repo
         spec:
-          deletionPolicy: Orphan 
+          deletionPolicy: Orphan
           forProvider:
             fromRepo:
               path: skeleton
