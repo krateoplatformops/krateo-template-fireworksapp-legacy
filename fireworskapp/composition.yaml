@@ -131,6 +131,8 @@ spec:
           toFieldPath: "spec.fromRepoCredentials.secretRef.namespace"
         - fromFieldPath: "spec.namespace"
           toFieldPath: "spec.toRepoCredentials.secretRef.namespace"
+      readinessChecks:
+        - type: None
     - base:
         apiVersion: kubernetes.crossplane.io/v1alpha1
         kind: Object
@@ -248,6 +250,8 @@ spec:
           toFieldPath: "spec.apiUrl"
         - fromFieldPath: "spec.namespace"
           toFieldPath: "spec.credentials.secretRef.namespace"
+      readinessChecks:
+        - type: None
     - base:
         apiVersion: github.krateo.io/v1alpha1
         kind: Repo
